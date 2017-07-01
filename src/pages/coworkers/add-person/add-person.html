@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Add Coworker</ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        Close
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" stacked>New person</ion-label>
+      <ion-input type="text" placeholder="Name" [(ngModel)]="newPerson"></ion-input>
+
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="dismiss()" full>
+        Add
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>
