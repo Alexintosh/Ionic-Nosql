@@ -13,14 +13,21 @@
 <ion-content>
   <ion-list>
     <ion-item>
-      <ion-label color="primary" stacked>New person</ion-label>
-      <ion-input type="text" placeholder="Name" [(ngModel)]="newPerson"></ion-input>
+      <ion-label color="primary" stacked>Name</ion-label>
+      <ion-input type="text" placeholder="Name" [(ngModel)]="newPerson.name"></ion-input>
+    </ion-item>
 
-    </ion-item>
     <ion-item>
-      <button ion-button (click)="dismiss()" full>
-        Add
-      </button>
+      <ion-label color="primary" stacked>Surname</ion-label>
+      <ion-input type="text" placeholder="Surname" [(ngModel)]="newPerson.surname"></ion-input>
     </ion-item>
-  </ion-list>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Role</ion-label>
+      <ion-input type="text" placeholder="Role" [(ngModel)]="newPerson.role"></ion-input>
+    </ion-item>
+  </ion-list>  
+  <button ion-button (click)="dismiss()" full>
+    Add
+  </button>
 </ion-content>

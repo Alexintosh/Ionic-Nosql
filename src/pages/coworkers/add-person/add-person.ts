@@ -17,6 +17,7 @@ export class AddPerson {
   newPerson: Person;
 
   constructor(public viewCtrl: ViewController) {
+    this.newPerson = new Person();
   }
 
   dismiss() {

@@ -1,5 +1,5 @@
 import { AddPerson } from './add-person/add-person';
-import { Person, PEOPLE } from './../../person/person';
+import { Person } from './../../person/person';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 
@@ -20,7 +20,7 @@ export class Coworkers {
   
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
-    this.people = PEOPLE;
+    this.people = [];
   }
 
   presentProfileModal() {
@@ -33,7 +33,7 @@ export class Coworkers {
   }
 
   add(person){
-    if(person) this.people.push({name: person});    
+    if(person) this.people.push(person);
   }
 
 }

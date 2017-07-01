@@ -17,11 +17,11 @@
 <ion-list>
   <ion-item *ngFor="let person of people">
     <ion-avatar item-start>
-      <img src="img/avatar-finn.png">
+      <img *ngIf="!person.image" src="http://via.placeholder.com/150x150">
+      <img *ngIf="person.image" src="{{person.image}}">
     </ion-avatar>
-    <h2>{{person.name}}</h2>
-    <h3>Don't Know What To Do!</h3>
-    <p>I've had a pretty messed up day. If we just...</p>
+    <h2>{{person.name | titlecase}} {{person.surname | titlecase}}</h2>
+    <h3>Role: {{person.role}}</h3>
   </ion-item>
 </ion-list>
 </ion-content>
