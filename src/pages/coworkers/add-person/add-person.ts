@@ -1,6 +1,6 @@
 import { Person } from './../../../person/person';
 import { Component } from '@angular/core';
-import { ViewController } from "ionic-angular";
+import { ViewController, IonicPage } from "ionic-angular";
 import { Camera, CameraOptions } from '@ionic-native/camera';
 
 /**
@@ -9,6 +9,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
  * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
  * for more info on Angular Components.
  */
+
+@IonicPage()
 @Component({
 	selector: 'add-person',
 	templateUrl: 'add-person.html'

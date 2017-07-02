@@ -12,11 +12,6 @@ import { Component } from '@angular/core';
 })
 export class AddButton {
 
-  text: string;
-
-  constructor() {
-    console.log('Hello AddButton Component');
-    this.text = 'Hello World';
-  }
+  constructor() {}
 
 }

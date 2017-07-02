@@ -1,3 +1,4 @@
+import { AddPersonModule } from './../add-person/add-person.module';
 import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { AddButton } from './add-button';
@@ -7,7 +8,7 @@ import { AddButton } from './add-button';
     AddButton,
   ],
   imports: [
-    IonicModule,
+    IonicModule
   ],
   exports: [
     AddButton
