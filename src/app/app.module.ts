@@ -18,7 +18,6 @@ import { IonicStorageModule } from '@ionic/Storage';
   declarations: [
     MyApp,
     HomePage,
-    TabsPage,
     Coworkers,
     AddButton,
     AddPerson
@@ -32,7 +31,6 @@ import { IonicStorageModule } from '@ionic/Storage';
   entryComponents: [
     MyApp,
     HomePage,
-    TabsPage,
     Coworkers,
     AddPerson
   ],
