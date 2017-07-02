@@ -12,6 +12,7 @@ import { Camera } from '@ionic-native/camera';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DbProvider } from '../providers/db/db';
+import { IonicStorageModule } from '@ionic/Storage';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DbProvider } from '../providers/db/db';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

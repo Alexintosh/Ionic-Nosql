@@ -20,14 +20,17 @@ export class Coworkers {
   people: Person[];
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public db: DbProvider) {    
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public db: DbProvider) {        
+  }
+
+  ionViewDidLoad() {
     this.fetchCoworkers();
   }
 
-  ionViewDidLoad() {}
-
   fetchCoworkers(){
-    this.people = this.db.fetchCoworker();
+    this.db.fetchCoworker().then( (coworkers) =>{
+      this.people = coworkers;
+    });
   }
 
   presentProfileModal() {
