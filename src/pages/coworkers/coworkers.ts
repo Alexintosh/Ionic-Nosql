@@ -52,19 +52,13 @@ export class Coworkers {
   }
 
   getItems(ev: any) {
-    // Reset items back to all of the items
-
-    // set val to the value of the searchbar
-    let val = ev.target.value;
-    console.log(val);
+    let val = ev.target.value;  
     this.people = this.db.coworkers.find({
       '$or': [
         {'name': { '$regex': new RegExp(val, 'i')  } }, 
         {'surname': { '$regex': new RegExp(val, 'i') } },
       ],      
-    });
-
-    
+    });    
   }
 
 }
