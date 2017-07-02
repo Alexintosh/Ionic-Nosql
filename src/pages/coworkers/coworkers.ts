@@ -2,7 +2,7 @@ import { DbProvider } from './../../providers/db/db';
 import { AddPerson } from './add-person/add-person';
 import { Person } from './../../person/person';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { IonicPage, NavController, ModalController } from 'ionic-angular';
 
 
 /**
@@ -20,7 +20,7 @@ export class Coworkers {
   people: Person[];
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public db: DbProvider) {        
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public db: DbProvider) {        
   }
 
   ionViewDidLoad() {

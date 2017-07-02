@@ -9,7 +9,10 @@
         "build": "ionic-app-scripts build",
         "lint": "ionic-app-scripts lint",
         "ionic:build": "ionic-app-scripts build",
-        "ionic:serve": "ionic-app-scripts serve"
+        "ionic:serve": "ionic-app-scripts serve",
+        "test": "karma start ./test-config/karma.conf.js",
+        "test-ci": "karma start ./test-config/karma.conf.js --single-run",
+        "e2e": "webdriver-manager update --standalone false --gecko false; protractor ./test-config/protractor.conf.js"
     },
     "dependencies": {
         "@angular/common": "4.1.3",
@@ -46,7 +49,23 @@
         "@ionic/app-scripts": "1.3.12",
         "@ionic/cli-plugin-cordova": "1.4.0",
         "@ionic/cli-plugin-ionic-angular": "1.3.1",
-        "typescript": "2.3.4"
+        "typescript": "2.3.4",       
+        "@types/jasmine": "^2.5.41",
+        "@types/node": "^7.0.8",
+        "angular2-template-loader": "^0.6.2",
+        "html-loader": "^0.4.5",
+        "jasmine": "^2.5.3",
+        "jasmine-spec-reporter": "^4.1.0",
+        "karma": "^1.5.0",
+        "karma-chrome-launcher": "^2.0.0",
+        "karma-jasmine": "^1.1.0",
+        "karma-jasmine-html-reporter": "^0.2.2",
+        "karma-sourcemap-loader": "^0.3.7",
+        "karma-webpack": "^2.0.3",
+        "null-loader": "^0.1.1",
+        "protractor": "^5.1.1",
+        "ts-loader": "^2.0.3",
+        "ts-node": "^3.0.2"
     },
     "cordovaPlugins": [
         "cordova-plugin-whitelist",
