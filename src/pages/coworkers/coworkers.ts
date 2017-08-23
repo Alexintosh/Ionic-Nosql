@@ -21,6 +21,7 @@ export class Coworkers {
 
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public db: DbProvider) {        
+    this.people = [];
   }
 
   ionViewDidLoad() {

@@ -7,12 +7,6 @@ const loki = require('lokijs');
 const DB_NAME = "newGigv001.db";
 const COWORKER_COLLECTION = "coworkers";
 
-/*
-  Generated class for the DbProvider provider.
-
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular DI.
-*/
 @Injectable()
 export class DbProvider {
 
