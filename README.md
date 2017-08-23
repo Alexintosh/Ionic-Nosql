@@ -13,6 +13,14 @@ Ionic-Nosql uses [lokijs](http://lokijs.org/#/) and [Ionic Storage](https://ioni
 3. Run `yarn install` in order to install dependencies and clean the git repo.<br />
    *At this point you can run `ionic serve` to see the example app at `http://localhost:8080/`.*
 
+## How can I support the developer?
+- Star the GitHub repo :star:
+- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
+- Follow me on [Twitter](https://twitter.com/alexintosh) :feet:
+
+## Can I hire you?
+Yes!  Ping me on [Twitter](https://twitter.com/alexintosh) or get in touch by [mail](mailto:alessio.d@gmail.com)
+I will be happy to work with you!
 
 ### Directory Tree
 
