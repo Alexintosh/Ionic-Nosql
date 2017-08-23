@@ -22,7 +22,7 @@ export class DbProvider {
 
         let intervalId = setInterval(() => {
           this.persist();
-        }, 2000);
+        }, 100);
 
         return resolve(res.data);
       });        

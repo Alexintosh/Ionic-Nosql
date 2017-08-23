@@ -16,18 +16,18 @@
 
   <ion-searchbar (ionInput)="getItems($event)" (ionCancel)="fetchCoworkers()"></ion-searchbar>
   <ion-list>    
-    <ion-item-sliding *ngFor="let person of people">
+    <ion-item-sliding *ngFor="let person of people; let i = index">
       <ion-item>
         <ion-avatar item-start>
-          <img *ngIf="!person.image" src="http://via.placeholder.com/150x150">
+          <img *ngIf="!person.image" src="http://lorempixel.com/150/150/people/{{i}}">
           <img *ngIf="person.image" src="{{person.image}}">
         </ion-avatar>
         <h2>{{person.name | titlecase}} {{person.surname | titlecase}}</h2>
         <h3>Role: {{person.role}}</h3>
       </ion-item>
       <ion-item-options side="right">
-        <button ion-button color="secondary" icon-start (click)="rm(person)">
-          <ion-icon name="call"></ion-icon>
+        <button ion-button color="danger" icon-start (click)="rm(person)">
+          <ion-icon name="remove"></ion-icon>
           RM
         </button>
       </ion-item-options>
